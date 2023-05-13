@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Dictionary</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <form>
+    <input type="text" class="english-input" id="english" name="english" dir="ltr" placeholder="English...">
+    <input type="text" class="arabic-input" id="arabic" name="arabic" dir="rtl" placeholder="عربي...">
+    <button type="button" class="add-button" onclick="addEntry()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </form>
+  <table id="entries">
+    <thead>
+      <tr>
+        <th><ion-icon name="trash"></ion-icon></th>
+        <th>English</th>
+        <th>عربي</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Entries will be added here dynamically -->
+    </tbody>
+  </table>
+  <script src="main.js"></script>
+</body>
+
+</html>
