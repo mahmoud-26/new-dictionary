@@ -46,7 +46,7 @@ function addEntry() {
       showConfirmButton: false,
       denyButtonText: `Delete`,
     }).then((result) => {
-      /* Read more about isConfirmed, isDenied below */
+      // Read more about isConfirmed, isDenied below
       if (result.isDenied) {
         // Remove the corresponding entry from the entries array
         entries.splice(row.rowIndex - 1, 1);
@@ -90,7 +90,7 @@ function loadEntries() {
         showConfirmButton: false,
         denyButtonText: `Delete`,
       }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
+        // Read more about isConfirmed, isDenied below
         if (result.isDenied) {
           // Remove the corresponding entry from the entries array
           entries.splice(row.rowIndex - 1, 1);
